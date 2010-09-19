@@ -1,0 +1,8 @@
+(just forked this to add some info on compiling ofxOsc on windows+code::blocks)
+
+Using ofxOSC on Windows/code::blocks
+====================================
+Everytime I had to use ofxOsc I had to change my linker settings in 
+Code::blocks because I got undefined references to "htonl" etc.. 
+You can fix this, by changin the order of linker libs. You've to make sure
+that oscpack.a comes before libws2_32.a (or similar).
